@@ -4,6 +4,49 @@
         <title>Contact Me</title>
         <link rel="shortcut icon" href="images/logo.png">
         <link rel="stylesheet" href="styles.css">
+
+       <script src="contact.js"> </script>
+       
+       
+       
+       <style>
+            form{
+                width: fit-content;
+                margin: auto;
+                padding: 5px;
+                text-align: left;
+            }
+
+            legend{
+                text-align: center;
+            }
+            fieldset{
+                padding: 2px 3px 7px;
+                border-radius: 4px;
+            }
+            label{
+                display: inline-block;
+                vertical-align: top;
+                width: 75px;
+                color: #707070;
+
+
+            }
+            input,textarea{
+                width: 250px;
+                border: 1px solid #bbbbbb;
+                border-radius: 4px;
+                margin-bottom: 3px;
+            }
+
+            .submit-btn{
+                padding: 5px;
+                width: fit-content;
+                font-size: 13px;
+                color: #bbbbbb;
+                background-color: #eeeeee;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -13,8 +56,8 @@
                 </div>
 
                 <div class="profile-info">
-                    <h1>Divya Bajaj</h1>
-                    <p><a href="mailto:divya.bajaj@utrgv.edu">divya.bajaj@utrgv.edu</a></p>
+                    <h1>Andrea Videgaray</h1>
+                    <p><a href="andrea.videgaray01@utrgv.edu">mailto:andrea.videgaray01@utrgv.edu</a></p>
                 </div>
             </div>
             
@@ -23,7 +66,7 @@
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="current" >Contact</a></li>
             </ul>
             <div class="socials">
                 <a href="https://github.com/divyabajaj123" target="_blank"><img alt="Github icon" src="images/github-logo.png"></a>
@@ -32,11 +75,26 @@
         </header>
 
         <div>
-            
+            <form name= "contactMe" onsubmit= "sendMessage();"> 
+                <fieldset>
+                    <legend>Contact Me</legend>
+                    <label>Name:</label>
+                    <input name="uname" type="text"><br>
+
+                    <label>Phone:</label>
+                    <input name="phone" type="tel"><br>
+
+                    <label>Message:</label>
+                    <textarea name="message" rows="5" cols="50"></textarea><br>
+
+                    <input class= "submit-btn" type="submit" value=" Send Email!">
+                </fieldset>
+            </form>
         </div>
 
         <footer>
-            Copyright &copy; Divya Bajaj
+            Copyright &copy; Andrea Videgaray
         </footer>
+
     </body>
 </html>

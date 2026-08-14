@@ -41,6 +41,9 @@ header {
     color: white;
     text-decoration: none;
     }
+ .nav-bar.current { 
+    color: maroon;
+ }   
 a:hover{
     text-decoration: underline;
 }
