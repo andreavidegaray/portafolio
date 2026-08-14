@@ -5,11 +5,11 @@ function sendMessage()
     let phoneNum = document.contactMe.phone.value; 
     let content = document.contactMe.message.value;
 
-    if(username is = "" || content == "")
+    if(username === "" || content === "")
     {
         alert("Required fields empty. Please fill out name and message");
      }   
-     else if (content.lenght <=6)
+     else if (content.length <=6)
      {
         alert("Message too short");
      }
@@ -17,9 +17,9 @@ function sendMessage()
         alert("Composing email");
         let subject =`Message through Portfolio from ${username}`;
 
-        let body = `${content}\n\nFrom: ${username}\nPhone {phoneNum}`;
+        let body = `${content}\n\nFrom: ${username}\nPhone: ${phoneNum}`;
 
-        let mailToLink = 'mailto:andrea.videgaray01@utrgv.edu?subject=${endcodeURIComponent(subject)}&body=${endcodeURIComponent(body)}`;
+        let mailToLink = `mailto:andrea.videgaray01@utrgv.edu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
         window.location.href= mailToLink;
 

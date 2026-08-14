@@ -8,49 +8,60 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: lightgrey;
+    background-color: #edfaea; 
     padding-top: 5px;
     padding-left: 10px;
     top: 0;
-    position: sticky;
+    position: relative;
 
 }
 
 .profile{
     display: flex;
     align-items: center;
+    padding-top: 10px;
 }
 .profile-info h1{
-    color: white;
+    color: black;
     font-weight: 700;
+    padding-top: 10px;
 }
 
 .profile-img img{
-    width: 90px;
-    height: 75px;
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
 }
 
 .nav-bar{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 25px;
+    width: 100%;
+    margin:0;
+    padding: 15px0;
     list-style-type: none;
 }
 
 .nav-bar a{
-    color: white;
+    color: black;
     text-decoration: none;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
     }
  .nav-bar.current { 
-    color: maroon;
+    color: black;
  }   
 a:hover{
     text-decoration: underline;
 }
 
 .socials img{
-    width: 60px;
+    width: 40px;
     height: 40px;
+    object-fit: contain;
 }
 
 footer{
